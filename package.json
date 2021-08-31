@@ -1,5 +1,32 @@
 {
+  "scripts": {
+    "eslint": "eslint src --ext .js",
+    "eslint:fix": "eslint src --ext .js --fix",
+    "lint": "npm run prettier && npm run eslint",
+    "lint:fix": "npm run package:fix && npm run prettier:fix && npm run eslint:fix",
+    "package:fix": "format-package -w",
+    "prettier": "npx prettier --check .",
+    "prettier:fix": "npx prettier --write .",
+    "test": "jest",
+    "update": "npm run npm-check-updates -u"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged --quiet",
+      "pre-push": "npm run lint"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,yaml}": "prettier --write"
+  },
   "devDependencies": {
-    "jest": "^27.1.0"
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "format-package": "^6.1.0",
+    "husky": "^7.0.2",
+    "jest": "^27.1.0",
+    "lint-staged": "^11.1.2",
+    "npm-check-updates": "^11.8.3",
+    "prettier": "^2.3.2"
   }
 }
