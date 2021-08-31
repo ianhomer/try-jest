@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "eslint": "eslint src --ext .js",
-    "eslint:fix": "eslint src --ext .js --fix",
+    "eslint": "eslint src --ext .ts",
+    "eslint:fix": "eslint src --ext .ts --fix",
     "lint": "npm run prettier && npm run eslint",
     "lint:fix": "npm run package:fix && npm run prettier:fix && npm run eslint:fix",
     "package:fix": "format-package -w",
@@ -17,11 +17,20 @@
     }
   },
   "lint-staged": {
-    "*.{js,json,yaml}": "prettier --write"
+    "*.{ts,json,yaml}": "prettier --write"
+  },
+  "dependencies": {
+    "typescript": "^4.4.2"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-typescript": "^7.15.0",
+    "@types/jest": "^27.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "babel-jest": "^27.1.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
     "format-package": "^6.1.0",
     "husky": "^7.0.2",
     "jest": "^27.1.0",

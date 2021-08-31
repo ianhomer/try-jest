@@ -1,12 +1,24 @@
 {
   "root": true,
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": [],
-  "extends": ["prettier"],
-  "rules": {},
+  "plugins": ["@typescript-eslint", "simple-import-sort"],
+  "extends": [
+    "prettier",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error"
+  },
   "env": {
     "jest": true,
     "node": true
