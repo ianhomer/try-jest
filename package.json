@@ -10,7 +10,8 @@
     "prepare": "husky install",
     "prettier": "npx prettier --check .",
     "prettier:fix": "npx prettier --write .",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch --onlyChanged"
   },
   "husky": {
     "hooks": {

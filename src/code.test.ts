@@ -1,7 +1,7 @@
 import { code } from "./code";
 
-test("code returns AB00 by default", () => {
-  expect(code()).toBe("AB00");
+test("code returns AB01 by default", () => {
+  expect(code()).toBe("AB01");
 });
 
 test("code for week 1 returns AB01", () => {
