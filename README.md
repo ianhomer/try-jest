@@ -18,6 +18,8 @@ Try Jest
 - Commit
   - if test fails then your code is reverted
   - if test passes and commit is OK, then code automatically pushed
+  - if you haven't been correcting lint errors in your editor then push will be
+    rejected
 - Refactor code
 - Repeat with all tests that should fail
 
