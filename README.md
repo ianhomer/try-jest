@@ -21,7 +21,7 @@ Try Jest
   - if test passes and commit is OK, then code automatically pushed to origin
   - if you haven't been correcting lint errors in your editor then push will be
     rejected
-- Refactor code to make it beautiful
+- Refactor code to make it beautiful (and commit)
 - Repeat and create all tests that you can think that should fail for your
   specification
 
