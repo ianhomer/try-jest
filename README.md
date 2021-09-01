@@ -9,16 +9,16 @@ Try Jest
 
 ## Make changes
 
-### TDD and Gentle Trunk Based TCR
+### TDD and with a dash of Trunk Based TCR
 
     npm test:watch
 
 - Write simplest (failing) test that reads like a specification
 - Write simplest code to get green
 - Commit
-  - if test fails then your code is reverted
-  - if code added that was not covered by test then your code is reverted
-  - if test passes and commit is OK, then code automatically pushed
+  - if test fails then **your code is reverted**
+  - if your code was not covered by tests then **your code is reverted**
+  - if test passes and commit is OK, then code automatically pushed to origin
   - if you haven't been correcting lint errors in your editor then push will be
     rejected
 - Refactor code
