@@ -7,16 +7,23 @@ Try Jest
     npm install
     npm test
 
-## Experiment with change flows
+## Make changes
 
-### TCR
-
-Make chanage and commit, if test fails change is reverted, lost, gone.
-
-### Gentle TCR
+### TDD and Gentle TCR
 
     npm test:watch
 
-Make change, see changes asserted. Commit when ready. If test does fail, you
-were warned, change is reverted. 
+- Write simplest (failing) test that reads like a specification
+- Write simplest code to get green
+- Commit - if test fails then your code is reverted
+- Refactor code
+- Repeat with all tests that should fail
 
+### TDD Katas
+
+Read <http://www.codemanship.co.uk/tdd_jasongorman_codemanship.pdf>
+
+### TCR
+
+As with TDD flow above, but no peaking. If change is no good, you loose the
+change, but gain wisdom.
