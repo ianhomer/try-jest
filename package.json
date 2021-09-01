@@ -5,13 +5,14 @@
     "lint": "npm run prettier && npm run eslint",
     "lint:fix": "npm run package:fix && npm run prettier:fix && npm run eslint:fix",
     "package:fix": "format-package -w",
+    "prepare": "husky install",
     "prettier": "npx prettier --check .",
     "prettier:fix": "npx prettier --write .",
     "test": "jest"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged --quiet",
+      "pre-commit": "lint-staged --quiet && npm test",
       "pre-push": "npm run lint"
     }
   },
