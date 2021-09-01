@@ -1,3 +1,3 @@
-export function mask(s: string) {
-  return "*".repeat(s.length);
+export function mask(s: string, character = "*") {
+  return character.repeat(s.length);
 }

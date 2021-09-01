@@ -7,3 +7,7 @@ test("mask password", () => {
 test("mask longer password", () => {
   expect(mask("longpassword")).toBe("************");
 });
+
+test("mask with alternative character", () => {
+  expect(mask("abc", "-")).toBe("---");
+});
