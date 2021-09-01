@@ -1,5 +1,9 @@
 import { mask } from "./mask";
 
-test("mask secret", () => {
-  expect(mask("password")).toBe("*******");
+test("mask password", () => {
+  expect(mask("password")).toBe("********");
+});
+
+test("mask longer password", () => {
+  expect(mask("longpassword")).toBe("************");
 });
