@@ -7,8 +7,7 @@
     "package:fix": "format-package -w",
     "prettier": "npx prettier --check .",
     "prettier:fix": "npx prettier --write .",
-    "test": "jest",
-    "update": "npm run npm-check-updates -u"
+    "test": "jest"
   },
   "husky": {
     "hooks": {
@@ -35,7 +34,6 @@
     "husky": "^7.0.2",
     "jest": "^27.1.0",
     "lint-staged": "^11.1.2",
-    "npm-check-updates": "^11.8.3",
     "prettier": "^2.3.2"
   }
 }
