@@ -5,6 +5,8 @@
     "lint": "npm run prettier && npm run eslint",
     "lint:fix": "npm run package:fix && npm run prettier:fix && npm run eslint:fix",
     "package:fix": "format-package -w",
+    "pre-commit": "lint-staged --quiet && npm test",
+    "pre-push": "npm run lint",
     "prepare": "husky install",
     "prettier": "npx prettier --check .",
     "prettier:fix": "npx prettier --write .",
@@ -15,9 +17,6 @@
       "pre-commit": "lint-staged --quiet && npm test",
       "pre-push": "npm run lint"
     }
-  },
-  "lint-staged": {
-    "*.{ts,json,yaml}": "prettier --write"
   },
   "dependencies": {
     "typescript": "^4.4.2"
