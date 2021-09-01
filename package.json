@@ -10,13 +10,23 @@
     "prepare": "husky install",
     "prettier": "npx prettier --check .",
     "prettier:fix": "npx prettier --write .",
-    "test": "jest",
+    "test": "jest --collectCoverage",
     "test:watch": "jest --watch --onlyChanged"
   },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged --quiet && npm test",
       "pre-push": "npm run lint"
+    }
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
     }
   },
   "dependencies": {
