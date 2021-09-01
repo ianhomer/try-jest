@@ -9,7 +9,7 @@ Try Jest
 
 ## Make changes
 
-### TDD and with a dash of Trunk Based TCR
+### TDD with a Dash of Trunk Based TCR
 
     npm test:watch
 
