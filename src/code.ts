@@ -1,7 +1,3 @@
 export function code(week = 0) {
-  if (week < 10) {
-    return "AB0" + week;
-  } else {
-    return "AB" + week;
-  }
+  return "AB" + (week < 10 ? "0" : "") + week;
 }
