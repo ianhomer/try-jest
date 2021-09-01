@@ -23,6 +23,8 @@ Try Jest
 - Refactor code
 - Repeat with all tests that should fail
 
+![TDD](images/tdd.png)
+
 ### TDD Katas
 
 Read <http://www.codemanship.co.uk/tdd_jasongorman_codemanship.pdf>
