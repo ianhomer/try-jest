@@ -7,3 +7,7 @@ test("code returns AB00 by default", () => {
 test("code for week 1 returns AB01", () => {
   expect(code(1)).toBe("AB01");
 });
+
+test("code for week 10 returns AB10", () => {
+  expect(code(10)).toBe("AB10");
+});
