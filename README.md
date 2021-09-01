@@ -22,7 +22,7 @@ Try Jest
   - if you haven't been correcting lint errors in your editor then push will be
     rejected
 - Refactor code
-- Repeat create all tests that you can think that should fail for your
+- Repeat and create all tests that you can think that should fail for your
   specification
 
 ![TDD](images/tdd.png)
