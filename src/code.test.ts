@@ -11,3 +11,9 @@ test("code for week 1 returns AB01", () => {
 test("code for week 10 returns AB10", () => {
   expect(code(10)).toBe("AB10");
 });
+
+test("code for week out of range throws exception", () => {
+  expect(() => {
+    code(-1);
+  }).toThrow("Week is out of range");
+});
