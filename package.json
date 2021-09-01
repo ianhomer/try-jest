@@ -11,7 +11,7 @@
     "prettier": "npx prettier --check .",
     "prettier:fix": "npx prettier --write .",
     "test": "jest --collectCoverage",
-    "test:watch": "jest --watch --onlyChanged"
+    "test:watch": "jest --watch --onlyChanged --collectCoverage"
   },
   "husky": {
     "hooks": {
