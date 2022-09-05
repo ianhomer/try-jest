@@ -2,7 +2,7 @@ import React from "react";
 import { act, render, screen } from "@testing-library/react";
 import Timer from "./Timer";
 
-const advanceTimerInTicksAndAct = async (ticks:number, tickTimeInMs:number) => {
+const advanceTimerTickAndAct = async (ticks:number, tickTimeInMs:number) => {
   for (let i = 0; i < ticks; i++) {
     await act(async () => {
       jest.advanceTimersByTime(tickTimeInMs);
@@ -25,7 +25,7 @@ describe("timer", () => {
     render(<Timer />);
     const timer = screen.getByRole("timer");
     expect(timer).toBeInTheDocument();
-    await advanceTimerInTicksAndAct(1000, 100);
+    await advanceTimerTickAndAct(1000, 100);
     expect(timer.textContent).toBe("100 : 100");
   });
 });
