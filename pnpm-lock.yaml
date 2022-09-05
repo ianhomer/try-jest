@@ -4,6 +4,7 @@ specifiers:
   "@babel/preset-env": ^7.15.0
   "@babel/preset-typescript": ^7.15.0
   "@types/jest": ^27.0.1
+  "@types/node": ^18.7.15
   "@typescript-eslint/eslint-plugin": ^4.30.0
   "@typescript-eslint/parser": ^5.36.2
   babel-jest: ^27.1.0
@@ -26,6 +27,7 @@ devDependencies:
   "@babel/preset-env": 7.19.0
   "@babel/preset-typescript": 7.18.6
   "@types/jest": 27.5.2
+  "@types/node": 18.7.15
   "@typescript-eslint/eslint-plugin": 4.33.0_dqza5hu6oohwmkiplqvc43adpy
   "@typescript-eslint/parser": 5.36.2_td6yqss6ra3qoebludh4ctrhym
   babel-jest: 27.5.1
@@ -38,7 +40,7 @@ devDependencies:
   lint-staged: 11.2.6
   prettier: 2.7.1
   ts-jest: 28.0.8_mptj35o2pmg2xo2ybitga5htj4
-  ts-node: 10.9.1_typescript@4.8.2
+  ts-node: 10.9.1_r4hqq7vrw4pxsipnb7ha25ylfe
 
 packages:
   /@ampproject/remapping/2.2.0:
@@ -4623,7 +4625,7 @@ packages:
       pretty-format: 27.5.1
       slash: 3.0.0
       strip-json-comments: 3.1.1
-      ts-node: 10.9.1_typescript@4.8.2
+      ts-node: 10.9.1_r4hqq7vrw4pxsipnb7ha25ylfe
     transitivePeerDependencies:
       - bufferutil
       - canvas
@@ -6503,7 +6505,7 @@ packages:
       yargs-parser: 21.1.1
     dev: true
 
-  /ts-node/10.9.1_typescript@4.8.2:
+  /ts-node/10.9.1_r4hqq7vrw4pxsipnb7ha25ylfe:
     resolution:
       {
         integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==,
@@ -6525,6 +6527,7 @@ packages:
       "@tsconfig/node12": 1.0.11
       "@tsconfig/node14": 1.0.3
       "@tsconfig/node16": 1.0.3
+      "@types/node": 18.7.15
       acorn: 8.8.0
       acorn-walk: 8.2.0
       arg: 4.1.3

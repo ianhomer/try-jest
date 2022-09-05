@@ -11,8 +11,8 @@
     "prepare": "husky install",
     "prettier": "pnpx prettier --check .",
     "prettier:fix": "pnpx prettier --write .",
-    "test": "jest --collectCoverage",
-    "test:watch": "jest --watch --onlyChanged --collectCoverage",
+    "test": "jest",
+    "test:watch": "jest --watch --onlyChanged",
     "test:coverage": "jest --collectCoverage",
     "test:coverage:watch": "jest --watch --onlyChanged --collectCoverage"
   },
@@ -33,6 +33,7 @@
     "@babel/preset-env": "^7.15.0",
     "@babel/preset-typescript": "^7.15.0",
     "@types/jest": "^27.0.1",
+    "@types/node": "^18.7.15",
     "@typescript-eslint/eslint-plugin": "^4.30.0",
     "@typescript-eslint/parser": "^5.36.2",
     "babel-jest": "^27.1.0",
