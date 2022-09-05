@@ -17,9 +17,11 @@ describe("timer", () => {
     render(<Timer />);
     const timer = screen.getByRole("timer");
     expect(timer).toBeInTheDocument();
-    act(() => {
-      jest.advanceTimersByTime(5_000);
-    });
-    expect(timer.textContent).toBe("5");
+    for (let i = 0; i < 10; i++) {
+      act(() => {
+        jest.advanceTimersToNextTimer(5);
+      });
+    }
+    expect(timer.textContent).toBe("10 : 10");
   });
 });
