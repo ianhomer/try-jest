@@ -7,7 +7,7 @@
     "lint": "pnpm run prettier && pnpm run eslint",
     "lint:fix": "pnpm run package:fix && pnpm run prettier:fix && pnpm run eslint:fix",
     "package:fix": "format-package -w",
-    "pre-commit": "lint-staged --quiet && pnpm test",
+    "pre-commit": "lint-staged --quiet",
     "prepare": "husky install",
     "prettier": "pnpx prettier --check .",
     "prettier:fix": "pnpx prettier --write .",
