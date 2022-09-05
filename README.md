@@ -2,16 +2,16 @@
 
 Try Jest
 
-## tl;dr
+## Getting started
 
-    npm install
-    npm test
+    pnpm install
+    pnpm test
 
 ## Make changes
 
 ### TDD with a Dash of Trunk Based TCR
 
-    npm test:watch
+    pnpm test:watch
 
 - Write simplest (failing) test that reads like a specification
 - Write simplest code to get green
@@ -27,7 +27,7 @@ Try Jest
 
 ![TDD](images/tdd.png)
 
-### TDD Katas
+### TDD katas
 
 Read <http://www.codemanship.co.uk/tdd_jasongorman_codemanship.pdf>
 
