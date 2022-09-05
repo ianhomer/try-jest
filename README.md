@@ -9,7 +9,7 @@ Try Jest
 
 ## Make changes
 
-### TDD with a Dash of Trunk Based TCR
+### TDD
 
     pnpm test:watch
 
@@ -36,3 +36,7 @@ Read <http://www.codemanship.co.uk/tdd_jasongorman_codemanship.pdf>
 As with TDD flow above, but no peaking. When you commit, if change is no good,
 you loose the change, but gain wisdom. If all good then straight to remote trunk
 to share the goodness.
+
+For TCR experience in `package.json` change the following.
+
+    "pre-commit": "lint-staged --quiet && npm test || (git reset --hard HEAD && exit 1)"

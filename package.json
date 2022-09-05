@@ -1,4 +1,6 @@
 {
+  "name": "try-jest",
+  "version": "1.0.0",
   "scripts": {
     "eslint": "eslint src --ext .ts",
     "eslint:fix": "eslint src --ext .ts --fix",
@@ -11,13 +13,9 @@
     "prettier": "pnpx prettier --check .",
     "prettier:fix": "pnpx prettier --write .",
     "test": "jest --collectCoverage",
-    "test:watch": "jest --watch --onlyChanged --collectCoverage"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged --quiet && pnpm test",
-      "pre-push": "pnpm run lint"
-    }
+    "test:watch": "jest --watch --onlyChanged --collectCoverage",
+    "test:coverage": "jest --collectCoverage",
+    "test:coverage:watch": "jest --watch --onlyChanged --collectCoverage"
   },
   "jest": {
     "coverageThreshold": {
@@ -46,6 +44,8 @@
     "husky": "^7.0.2",
     "jest": "^27.1.0",
     "lint-staged": "^11.1.2",
-    "prettier": "^2.3.2"
+    "prettier": "^2.3.2",
+    "ts-jest": "^28.0.8",
+    "ts-node": "^10.9.1"
   }
 }
