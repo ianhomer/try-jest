@@ -10,8 +10,8 @@ function Timer() {
     }, 1000);
     return () => {
       clearTimeout(timeoutId);
-    }
-  }, [timeoutTime])
+    };
+  }, [timeoutTime]);
 
   useEffect(() => {
     const timeoutId = setInterval(() => {
@@ -19,13 +19,15 @@ function Timer() {
     }, 1000);
     return () => {
       clearInterval(timeoutId);
-    }
+    };
   });
-  
+
   return (
     <div className="timer">
       <h2>Timer</h2>
-      <p role="timer">{intervalTime} : {timeoutTime}</p>
+      <p role="timer">
+        {intervalTime} : {timeoutTime}
+      </p>
     </div>
   );
 }

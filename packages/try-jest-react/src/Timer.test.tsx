@@ -2,9 +2,17 @@ import React from "react";
 import { act, render, screen } from "@testing-library/react";
 import Timer from "./Timer";
 
+const advanceTimerInTicksAndAct = async (ticks:number, tickTimeInMs:number) => {
+  for (let i = 0; i < ticks; i++) {
+    await act(async () => {
+      jest.advanceTimersByTime(tickTimeInMs);
+    });
+  }
+};
+
 describe("timer", () => {
   beforeEach(() => {
-    jest.useFakeTimers('legacy');
+    jest.useFakeTimers("legacy");
   });
 
   test("renders heading", () => {
@@ -13,15 +21,11 @@ describe("timer", () => {
     expect(text).toBeInTheDocument();
   });
 
-  test("renders time running", () => {
+  test("renders time running", async () => {
     render(<Timer />);
     const timer = screen.getByRole("timer");
     expect(timer).toBeInTheDocument();
-    for (let i = 0; i < 10; i++) {
-      act(() => {
-        jest.advanceTimersToNextTimer(5);
-      });
-    }
-    expect(timer.textContent).toBe("10 : 10");
+    await advanceTimerInTicksAndAct(1000, 100);
+    expect(timer.textContent).toBe("100 : 100");
   });
 });
