@@ -2,21 +2,21 @@
   "scripts": {
     "eslint": "eslint src --ext .ts",
     "eslint:fix": "eslint src --ext .ts --fix",
-    "lint": "npm run prettier && npm run eslint",
-    "lint:fix": "npm run package:fix && npm run prettier:fix && npm run eslint:fix",
+    "lint": "pnpm run prettier && pnpm run eslint",
+    "lint:fix": "pnpm run package:fix && pnpm run prettier:fix && pnpm run eslint:fix",
     "package:fix": "format-package -w",
-    "pre-commit": "lint-staged --quiet && npm test || (git reset --hard HEAD && exit 1)",
-    "pre-push": "npm run lint",
+    "pre-commit": "lint-staged --quiet && pnpm test",
+    "pre-push": "pnpm run lint",
     "prepare": "husky install",
-    "prettier": "npx prettier --check .",
-    "prettier:fix": "npx prettier --write .",
+    "prettier": "pnpx prettier --check .",
+    "prettier:fix": "pnpx prettier --write .",
     "test": "jest --collectCoverage",
     "test:watch": "jest --watch --onlyChanged --collectCoverage"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged --quiet && npm test",
-      "pre-push": "npm run lint"
+      "pre-commit": "lint-staged --quiet && pnpm test",
+      "pre-push": "pnpm run lint"
     }
   },
   "jest": {
