@@ -57,7 +57,6 @@ importers:
       typescript: ^4.8.2
       web-vitals: ^2.1.4
     dependencies:
-      "@testing-library/jest-dom": 5.16.5
       "@testing-library/react": 13.4.0_biqbaboplfbrettd7655fr4n2y
       "@testing-library/user-event": 13.5.0_wl4iynrlixafokvgqnhzlvigei
       "@types/jest": 27.5.2
@@ -69,6 +68,8 @@ importers:
       react-scripts: 5.0.1_yas6qlp6rjeowt6eciwbvt2zny
       typescript: 4.8.2
       web-vitals: 2.1.4
+    devDependencies:
+      "@testing-library/jest-dom": 5.16.5
 
 packages:
   /@adobe/css-tools/4.0.1:
@@ -76,7 +77,7 @@ packages:
       {
         integrity: sha512-+u76oB43nOHrF4DDWRLWDCtci7f3QJoEBigemIdIeTi1ODqjx6Tad9NCVnPRwewWlKkVab5PlK8DCtPTyX7S8g==,
       }
-    dev: false
+    dev: true
 
   /@ampproject/remapping/2.2.0:
     resolution:
@@ -2231,6 +2232,7 @@ packages:
     engines: { node: ^14.15.0 || ^16.10.0 || >=18.0.0 }
     dependencies:
       jest-get-type: 29.0.0
+    dev: true
 
   /@jest/expect/29.0.2:
     resolution:
@@ -2401,6 +2403,7 @@ packages:
     engines: { node: ^14.15.0 || ^16.10.0 || >=18.0.0 }
     dependencies:
       "@sinclair/typebox": 0.24.35
+    dev: true
 
   /@jest/source-map/27.5.1:
     resolution:
@@ -2586,6 +2589,7 @@ packages:
       "@types/node": 18.7.15
       "@types/yargs": 17.0.12
       chalk: 4.1.2
+    dev: true
 
   /@jridgewell/gen-mapping/0.1.1:
     resolution:
@@ -3035,7 +3039,7 @@ packages:
       dom-accessibility-api: 0.5.14
       lodash: 4.17.21
       redent: 3.0.0
-    dev: false
+    dev: true
 
   /@testing-library/react/13.4.0_biqbaboplfbrettd7655fr4n2y:
     resolution:
@@ -3321,6 +3325,7 @@ packages:
     dependencies:
       expect: 29.0.2
       pretty-format: 29.0.2
+    dev: true
 
   /@types/json-schema/7.0.11:
     resolution:
@@ -3480,7 +3485,7 @@ packages:
       }
     dependencies:
       "@types/jest": 29.0.0
-    dev: false
+    dev: true
 
   /@types/trusted-types/2.0.2:
     resolution:
@@ -4160,7 +4165,6 @@ packages:
         integrity: sha512-eigU3vhqSO+Z8BKDnVLN/ompjhf3pYzecKXz8+whRy+9gZu8n1TCGfwzQUUPnqdHl9ax1Hr9031orZ+UOEYr7Q==,
       }
     engines: { node: ">=6.0" }
-    dev: false
 
   /array-flatten/1.1.1:
     resolution:
@@ -4878,7 +4882,7 @@ packages:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
-    dev: false
+    dev: true
 
   /chalk/4.1.2:
     resolution:
@@ -5502,7 +5506,7 @@ packages:
       {
         integrity: sha512-YUifsXXuknHlUsmlgyY0PKzgPOr7/FjCePfHNt0jxm83wHZi44VDMQ7/fGNkjY3/jV1MC+1CmZbaHzugyeRtpg==,
       }
-    dev: false
+    dev: true
 
   /cssdb/7.0.1:
     resolution:
@@ -5845,6 +5849,7 @@ packages:
         integrity: sha512-7Qe/zd1wxSDL4D/X/FPjOMB+ZMDt71W94KYaq05I2l0oQqgXgs7s4ftYYmV38gBSrPz2vcygxfs1xn0FT+rKNA==,
       }
     engines: { node: ^14.15.0 || ^16.10.0 || >=18.0.0 }
+    dev: true
 
   /diff/4.0.2:
     resolution:
@@ -5911,7 +5916,6 @@ packages:
       {
         integrity: sha512-NMt+m9zFMPZe0JcY9gN224Qvk6qLIdqex29clBvc/y75ZBX9YA9wNK3frsYvu2DI1xcCIwxwnX+TlsJ2DSOADg==,
       }
-    dev: false
 
   /dom-converter/0.2.0:
     resolution:
@@ -6785,6 +6789,7 @@ packages:
       jest-matcher-utils: 29.0.2
       jest-message-util: 29.0.2
       jest-util: 29.0.2
+    dev: true
 
   /express/4.18.1:
     resolution:
@@ -7761,6 +7766,7 @@ packages:
         integrity: sha512-EdDDZu4A2OyIK7Lr/2zG+w5jmbuk1DVBnEwREQvBzspBJkCEbRa8GxU1lghYcaGJCnRWibjDXlq779X1/y5xwg==,
       }
     engines: { node: ">=8" }
+    dev: true
 
   /inflight/1.0.6:
     resolution:
@@ -8428,6 +8434,7 @@ packages:
       diff-sequences: 29.0.0
       jest-get-type: 29.0.0
       pretty-format: 29.0.2
+    dev: true
 
   /jest-docblock/27.5.1:
     resolution:
@@ -8542,6 +8549,7 @@ packages:
         integrity: sha512-83X19z/HuLKYXYHskZlBAShO7UfLFXu/vWajw9ZNJASN32li8yHMaVGAQqxFW1RCFOkB7cubaL6FaJVQqqJLSw==,
       }
     engines: { node: ^14.15.0 || ^16.10.0 || >=18.0.0 }
+    dev: true
 
   /jest-haste-map/27.5.1:
     resolution:
@@ -8662,6 +8670,7 @@ packages:
       jest-diff: 29.0.2
       jest-get-type: 29.0.0
       pretty-format: 29.0.2
+    dev: true
 
   /jest-message-util/27.5.1:
     resolution:
@@ -8715,6 +8724,7 @@ packages:
       pretty-format: 29.0.2
       slash: 3.0.0
       stack-utils: 2.0.5
+    dev: true
 
   /jest-mock/27.5.1:
     resolution:
@@ -9110,6 +9120,7 @@ packages:
       ci-info: 3.3.2
       graceful-fs: 4.2.10
       picomatch: 2.3.1
+    dev: true
 
   /jest-validate/27.5.1:
     resolution:
@@ -9707,7 +9718,6 @@ packages:
       {
         integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==,
       }
-    dev: false
 
   /log-update/4.0.0:
     resolution:
@@ -9903,7 +9913,7 @@ packages:
         integrity: sha512-I9jwMn07Sy/IwOj3zVkVik2JTvgpaykDZEigL6Rx6N9LbMywwUSMtxET+7lVoDLLd3O3IXwJwvuuns8UB/HeAg==,
       }
     engines: { node: ">=4" }
-    dev: false
+    dev: true
 
   /mini-css-extract-plugin/2.6.1_webpack@5.74.0:
     resolution:
@@ -11651,6 +11661,7 @@ packages:
       "@jest/schemas": 29.0.0
       ansi-styles: 5.2.0
       react-is: 18.2.0
+    dev: true
 
   /process-nextick-args/2.0.1:
     resolution:
@@ -12075,7 +12086,7 @@ packages:
     dependencies:
       indent-string: 4.0.0
       strip-indent: 3.0.0
-    dev: false
+    dev: true
 
   /regenerate-unicode-properties/10.0.1:
     resolution:
@@ -13096,7 +13107,7 @@ packages:
     engines: { node: ">=8" }
     dependencies:
       min-indent: 1.0.1
-    dev: false
+    dev: true
 
   /strip-json-comments/3.1.1:
     resolution:
