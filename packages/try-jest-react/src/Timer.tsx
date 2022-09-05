@@ -4,28 +4,24 @@ function Timer() {
   const [timeoutTime, setTimeoutTime] = useState(0);
   const [intervalTime, setIntervalTime] = useState(0);
 
-  const timeoutTimer = () => {
+  useEffect(() => {
     const timeoutId = setTimeout(() => {
       setTimeoutTime(timeoutTime + 1);
     }, 1000);
     return () => {
       clearTimeout(timeoutId);
     }
-  }
-  
-  useEffect(timeoutTimer, [timeoutTimer])
+  }, [timeoutTime])
 
-  const intervalTimer = () => {
+  useEffect(() => {
     const timeoutId = setInterval(() => {
       setIntervalTime(intervalTime + 1);
     }, 1000);
     return () => {
       clearInterval(timeoutId);
     }
-  }
+  });
   
-  useEffect(intervalTimer)
-
   return (
     <div className="timer">
       <h2>Timer</h2>
