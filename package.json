@@ -1,5 +1,5 @@
 {
-  "name": "try-jest",
+  "name": "@try-jest/root",
   "version": "1.0.0",
   "scripts": {
     "eslint": "eslint src --ext .ts",
@@ -11,10 +11,7 @@
     "prepare": "husky install",
     "prettier": "pnpx prettier --check .",
     "prettier:fix": "pnpx prettier --write .",
-    "test": "jest",
-    "test:watch": "jest --watch --onlyChanged",
-    "test:coverage": "jest --collectCoverage",
-    "test:coverage:watch": "jest --watch --onlyChanged --collectCoverage"
+    "test": "pnpm --filter @try-jest/try-jest* test"
   },
   "jest": {
     "coverageThreshold": {

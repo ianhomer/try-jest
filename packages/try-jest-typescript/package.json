@@ -1,0 +1,15 @@
+{
+  "name": "@try-jest/try-jest-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch --onlyChanged",
+    "test:coverage": "jest --collectCoverage",
+    "test:coverage:watch": "jest --watch --onlyChanged --collectCoverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

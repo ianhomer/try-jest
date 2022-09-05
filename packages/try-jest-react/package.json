@@ -1,5 +1,5 @@
 {
-  "name": "try-jest-react",
+  "name": "@try-jest/try-jest-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
