@@ -37,6 +37,7 @@ describe("version", () => {
 
   test.each`
     tag
+    ${undefined}
     ${"1.2"}
     ${"v1.2"}
     ${"v"}
@@ -46,5 +47,13 @@ describe("version", () => {
     expect(() => version(tag, 0, "foo")).toThrowError(
       `version ${tag} is not like vx.y.z`
     );
+  });
+
+  test("should use tag if undefined branch", () => {
+    expect(version("v1.2.3", 0, undefined)).toBe("v1.2.3");
+  });
+
+  test("should treat undefined branch as not release", () => {
+    expect(version("v1.2.3", 1, undefined)).toBe("v1.3.0-rc");
   });
 });
