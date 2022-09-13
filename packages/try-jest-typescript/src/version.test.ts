@@ -40,6 +40,8 @@ describe("version", () => {
     ${"1.2"}
     ${"v1.2"}
     ${"v"}
+    ${"vx.y.z"}
+    ${"v1.2.z"}
   `("should throw error when version not valid", ({ tag }) => {
     expect(() => version(tag, 0, "foo")).toThrowError(
       `version ${tag} is not like vx.y.z`
