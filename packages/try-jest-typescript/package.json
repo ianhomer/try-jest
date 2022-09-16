@@ -2,14 +2,14 @@
   "name": "@try-jest/try-jest-typescript",
   "version": "1.0.0",
   "description": "",
+  "license": "ISC",
+  "author": "",
+  "keywords": [],
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "test:watch": "jest --watch --onlyChanged",
     "test:coverage": "jest --collectCoverage",
-    "test:coverage:watch": "jest --watch --onlyChanged --collectCoverage"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "test:coverage:watch": "jest --watch --onlyChanged --collectCoverage",
+    "test:watch": "jest --watch --onlyChanged"
+  }
 }

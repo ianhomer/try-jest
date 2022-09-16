@@ -1,7 +1,7 @@
 import { act, render, screen } from "@testing-library/react";
 import Timer from "./Timer";
 
-const advanceTimerTickAndAct = async (ticks:number, tickTimeInMs:number) => {
+const advanceTimerTickAndAct = async (ticks: number, tickTimeInMs: number) => {
   for (let i = 0; i < ticks; i++) {
     await act(async () => {
       jest.advanceTimersByTime(tickTimeInMs);

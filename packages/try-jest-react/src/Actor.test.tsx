@@ -9,7 +9,7 @@ describe("actor", () => {
     expect(textElement).toBeInTheDocument();
   });
 
-  test("counts OK", () => {
+  test("counts OK", async () => {
     render(<Actor />);
     const clickableElement = screen.getByTestId("clickable");
     act(() => {

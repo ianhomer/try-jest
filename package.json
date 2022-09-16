@@ -2,8 +2,8 @@
   "name": "@try-jest/root",
   "version": "1.0.0",
   "scripts": {
-    "eslint": "eslint src --ext .ts",
-    "eslint:fix": "eslint src --ext .ts --fix",
+    "eslint": "eslint packages --ext .ts",
+    "eslint:fix": "eslint packages --ext .ts --fix",
     "lint": "pnpm run prettier && pnpm run eslint",
     "lint:fix": "pnpm run package:fix && pnpm run prettier:fix && pnpm run eslint:fix",
     "package:fix": "format-package -w",
