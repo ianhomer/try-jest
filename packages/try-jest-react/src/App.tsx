@@ -1,3 +1,4 @@
+import Actor from './Actor';
 import './App.css';
 import Timer from './Timer';
 
@@ -9,6 +10,7 @@ function App() {
           Try React
         </p>
         <Timer/>
+        <Actor/>
       </header>
     </div>
   );
