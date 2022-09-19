@@ -1,11 +1,15 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { TraceContext } from "./TraceContext";
 
 function Actor() {
   const [count, setCount] = useState(0);
+  const trace = useContext(TraceContext);
 
   const onClick = () => {
     setCount(count + 1);
   };
+
+  trace.push(`rendering Actor : ${count}`);
 
   return (
     <div className="actor">
