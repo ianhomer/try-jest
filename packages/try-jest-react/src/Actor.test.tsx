@@ -17,13 +17,19 @@ describe("actor", () => {
         <Actor />
       </TraceContext.Provider>
     );
-    expect(trace.pop()).toBe("rendering Actor : 0");
+    expect(trace.shift()).toBe("rendering Actor : 0");
     const clickableElement = screen.getByTestId("clickable");
     act(() => {
+      trace.push("act start");
       clickableElement.click();
+      trace.push("act end");
     });
-    expect(trace.pop()).toBe("rendering Actor : 1");
+    expect(trace.shift()).toBe("act start");
+    expect(trace.shift()).toBe("before setCount(1)");
+    expect(trace.shift()).toBe("act end");
+    expect(trace.shift()).toBe("rendering Actor : 1");
     const countElement = screen.getByTestId("count");
     expect(countElement.textContent).toBe("1");
+    expect(trace).toHaveLength(0);
   });
 });

@@ -6,6 +6,7 @@ function Actor() {
   const trace = useContext(TraceContext);
 
   const onClick = () => {
+    trace.push(`before setCount(${count + 1})`);
     setCount(count + 1);
   };
 
