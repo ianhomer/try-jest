@@ -1,6 +1,12 @@
 {
   "compilerOptions": {
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "plugins": [
+      {
+        "transform": "ts-auto-mock/transformer",
+        "cacheBetweenTests": false
+      }
+    ]
   },
   "include": ["src"]
 }

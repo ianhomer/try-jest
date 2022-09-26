@@ -11,5 +11,23 @@
     "test:coverage": "jest --collectCoverage",
     "test:coverage:watch": "jest --watch --onlyChanged --collectCoverage",
     "test:watch": "jest --watch --onlyChanged"
+  },
+  "devDependencies": {
+    "jest-ts-auto-mock": "^2.1.0",
+    "ts-auto-mock": "^3.6.2",
+    "ttypescript": "^1.5.13"
+  },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>config.ts"
+    ],
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "compiler": "ttypescript"
+      }
+    }
   }
 }
