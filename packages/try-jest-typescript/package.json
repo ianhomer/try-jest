@@ -7,6 +7,7 @@
   "keywords": [],
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "test": "jest",
     "test:coverage": "jest --collectCoverage",
     "test:coverage:watch": "jest --watch --onlyChanged --collectCoverage",
@@ -20,7 +21,10 @@
   },
   "jest": {
     "setupFiles": [
-      "<rootDir>config.ts"
+      "<rootDir>jest-setup.ts"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>jest-setup-after-env.ts"
     ],
     "transform": {
       ".(ts|tsx)": "ts-jest"

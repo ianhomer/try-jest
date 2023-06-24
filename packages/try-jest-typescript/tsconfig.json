@@ -6,7 +6,8 @@
         "transform": "ts-auto-mock/transformer",
         "cacheBetweenTests": false
       }
-    ]
+    ],
+    "noEmit": true
   },
   "include": ["src"]
 }
