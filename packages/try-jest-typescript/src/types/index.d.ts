@@ -1,9 +1,8 @@
-declare module "expect" {
-  interface AsymmetricMatchers {
-    toMatchResponse(expected: string): void;
-  }
-  interface Matchers<R> {
-    toMatchResponse(expected: string): R;
+declare global {
+  namespace jest {
+    interface Matchers<R> {
+      toMatchResponse(expected: object): R;
+    }
   }
 }
 

@@ -1,5 +1,7 @@
 describe("extend", () => {
   test("simple extend", () => {
-    // expect("test").toMatchResponse("test");
+    expect({ status: 500, body: { message: "test" } }).toMatchResponse({
+      status: 200,
+    });
   });
 });
