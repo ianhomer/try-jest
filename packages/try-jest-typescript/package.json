@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "test": "jest",
+    "test": "jest --expand",
     "test:coverage": "jest --collectCoverage",
     "test:coverage:watch": "jest --watch --onlyChanged --collectCoverage",
     "test:runInBand": "jest --runInBand",
@@ -26,7 +26,8 @@
       ".(ts|tsx)": "ts-jest"
     },
     "clearMocks": false,
-    "automock": false
+    "automock": false,
+    "verbose": false
   },
   "devDependencies": {
     "jest-ts-auto-mock": "^2.1.0",
