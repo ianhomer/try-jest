@@ -12,7 +12,8 @@
     "test:coverage": "jest --collectCoverage",
     "test:coverage:watch": "jest --watch --onlyChanged --collectCoverage",
     "test:runInBand": "jest --runInBand",
-    "test:watch": "jest --watch --onlyChanged"
+    "test:watch": "jest --watch --onlyChanged",
+    "test:nowatch": "jest --watch=false"
   },
   "jest": {
     "setupFiles": [
@@ -23,11 +24,6 @@
     ],
     "transform": {
       ".(ts|tsx)": "ts-jest"
-    },
-    "globals": {
-      "ts-jest": {
-        "compiler": "ttypescript"
-      }
     },
     "clearMocks": false,
     "automock": false

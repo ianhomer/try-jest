@@ -1,14 +1,14 @@
-import { createMock } from "ts-auto-mock";
+// import { createMock } from "ts-auto-mock";
 
-interface Interface {
-  a: string;
-  b: number;
-}
+// interface Interface {
+//   a: string;
+//   b: number;
+// }
 
-describe("reuse", () => {
-  it("should work", () => {
-    const mock = createMock<Interface>();
-    mock.a = "foo";
-    expect(mock.a).toBe("foo");
+describe("auto-mock", () => {
+  it("used to be supported", () => {
+    // const mock = createMock<Interface>();
+    // mock.a = "foo";
+    // expect(mock.a).toBe("foo");
   });
 });
