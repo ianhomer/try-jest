@@ -19,7 +19,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2.0.1
         with:
-          version: 6.32.1
+          version: 8.6.3
       - name: install
         run: pnpm install
       - name: lint
